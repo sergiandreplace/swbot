@@ -15,7 +15,7 @@ let dialogflowFulfillment = ((request, response) => {
     if (foundCharacters.length == 1) {
       callback(foundCharacters[0])
     } else  if (foundCharacters.length == 0) {
-      agent.add(`I don't know who is ${agent.parameters.character.original}`)
+      agent.add(`I don't know who ${agent.parameters.character.original} is`)
     } else {
       agent.add(`Which one of these do you mean? ${foundCharacters.map(it => it.name).join(", ")}`)
     }
