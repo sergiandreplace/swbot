@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "startdev": "nodemon --inspect src/index.js"
   },
   "author": "Sergi Martínez",
   "license": "ISC",
